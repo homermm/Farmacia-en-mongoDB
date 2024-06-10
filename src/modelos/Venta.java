@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Venta {
 	private int idVenta;
-    private String fecha;
+    private String fecha; // Esta version de GSON no admite LocalDateTime
     private String numeroTicket;
     private double total;
     private String formaPago; // Efectivo, Tarjeta, Débito

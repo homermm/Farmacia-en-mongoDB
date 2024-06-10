@@ -12,6 +12,7 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
+import modelos.Cliente;
 import modelos.Domicilio;
 import modelos.Empleado;
 import modelos.ObraSocial;
@@ -75,7 +76,8 @@ public class MongoDB {
 		// Genero Ventas
 		List<ProductoVenta> pv1 = new ArrayList<>();
 		pv1.add(new ProductoVenta(1, p1, 1));
-		Venta venta1 = new Venta(1, "FECHA", "1", "EFECTIVO", null, e1, e2, sucursalLanus, pv1);
+		Cliente c1 = new Cliente(1, "Jose", "San Martin", "12345", new Domicilio("Calle A", 123, "Lanus", "Buenos Aires"), new ObraSocial(1, "OSDE"), "1");
+		Venta venta1 = new Venta(1, LocalDateTime.now().toString(), "1", "EFECTIVO", c1, e1, e2, sucursalLanus, pv1);
 
 		// Guardo las ventas en una lista
 		List<Venta> ventas = new ArrayList<>();

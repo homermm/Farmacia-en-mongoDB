@@ -1,11 +1,27 @@
 [
   {
     "idVenta": 1,
-    "fecha": "FECHA",
+    "fecha": "2024-06-09T23:22:57.628626500",
     "numeroTicket": "1",
     "total": 10.0,
     "formaPago": "EFECTIVO",
-    "cliente": null,
+    "cliente": {
+      "idCliente": 1,
+      "nombre": "Jose",
+      "apellido": "San Martin",
+      "dni": "12345",
+      "domicilio": {
+        "calle": "Calle A",
+        "numero": 123,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 1,
+        "nombre": "OSDE"
+      },
+      "numeroAfiliado": "1"
+    },
     "empleadoVendedor": {
       "idEmpleado": 1,
       "apellido": "Perez",
