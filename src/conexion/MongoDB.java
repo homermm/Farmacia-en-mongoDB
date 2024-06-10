@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -32,11 +33,12 @@ public class MongoDB {
 		System.out.println("Conectado a la base de datos MongoDB: " + database.getName());
 
 		// Genero Productos
-		Producto p1 = new Producto(1, "Medicamento", "Paracetamol 500mg", "Laboratorio A", 3459, 10.0);
-		Producto p2 = new Producto(2, "Perfumeria", "Shampoo 200ml", "Laboratorio B", 5678, 30.0);
-		Producto p3 = new Producto(3, "Perfumeria", "Acondicionador 200ml", "Laboratorio A", 4467, 20.0);
-		Producto p4 = new Producto(4, "Medicamento", "Xanax", "Laboratorio A", 3108, 90.0);
-		Producto p5 = new Producto(5, "Medicamento", "Magnus 50 mg", "Laboratorio B", 4913, 100.0);
+		List<Producto> productos = new ArrayList<>();
+		productos.add(new Producto(1, "Medicamento", "Paracetamol 500mg", "Laboratorio A", 3459, 10.0));
+		productos.add(new Producto(2, "Perfumeria", "Shampoo 200ml", "Laboratorio B", 5678, 30.0));
+		productos.add(new Producto(3, "Perfumeria", "Acondicionador 200ml", "Laboratorio A", 4467, 20.0));
+		productos.add(new Producto(4, "Medicamento", "Xanax", "Laboratorio A", 3108, 90.0));
+		productos.add(new Producto(5, "Medicamento", "Magnus 50 mg", "Laboratorio B", 4913, 100.0));
 
 		// Genero Empleados
 		Empleado e1 = new Empleado(1, "Perez", "Juan", "12345678", "20-12345678-9",
@@ -73,22 +75,45 @@ public class MongoDB {
 		Sucursal sucursalLomas = new Sucursal(3, new Domicilio("Boedo", 374, "Lomas", "Buenos Aires"), e5,
 				empleadosLomas, "7890");
 
+		// Genero Clientes
+		List<Cliente> clientes = new ArrayList<>();
+		clientes.add(new Cliente(1, "Jose", "San Martin", "12345",
+				new Domicilio("Calle A", 123, "Lanus", "Buenos Aires"), new ObraSocial(1, "OSDE"), "1"));
+		clientes.add(new Cliente(2, "Maria", "Gonzalez", "54321",
+				new Domicilio("Calle B", 456, "Avellaneda", "Buenos Aires"), new ObraSocial(2, "Swiss Medical"), "2"));
+		clientes.add(new Cliente(3, "Juan", "Perez", "67890", new Domicilio("Calle C", 789, "Lomas", "Buenos Aires"),
+				new ObraSocial(3, "Galeno"), "3"));
+		
 		// Genero Ventas
-		List<ProductoVenta> pv1 = new ArrayList<>();
-		pv1.add(new ProductoVenta(1, p1, 1));
-		Cliente c1 = new Cliente(1, "Jose", "San Martin", "12345", new Domicilio("Calle A", 123, "Lanus", "Buenos Aires"), new ObraSocial(1, "OSDE"), "1");
-		Venta venta1 = new Venta(1, LocalDateTime.now().toString(), "1", "EFECTIVO", c1, e1, e2, sucursalLanus, pv1);
-
-		// Guardo las ventas en una lista
 		List<Venta> ventas = new ArrayList<>();
-		ventas.add(venta1);
+		int idVenta = 1;
+		Random random = new Random();
+		String[] formasDePago = {"EFECTIVO", "TARJETA", "DEBITO"};
+		
+		for (Sucursal sucursal : List.of(sucursalLanus, sucursalAvellaneda, sucursalLomas)) {
+			for (int i = 0; i < 10; i++) {
+				Empleado vendedor = sucursal.getEmpleados().get(i % sucursal.getEmpleados().size());
+				Empleado cajero = sucursal.getEmpleados().get((i + 1) % sucursal.getEmpleados().size());
+				Cliente cliente = clientes.get(i % clientes.size());
+				
+				List<ProductoVenta> productosVendidos = new ArrayList<>();
+				for (Producto producto : productos) {
+					productosVendidos.add(new ProductoVenta(idVenta, producto, 1));
+				}
+				
+				String formaPago = formasDePago[random.nextInt(formasDePago.length)];
+				
+				Venta venta = new Venta(idVenta++, LocalDateTime.now().toString(), String.valueOf(idVenta), formaPago, cliente, vendedor, cajero, sucursal, productosVendidos);
+				ventas.add(venta);
+			}
+		}
 
 		// Serializar ventas a JSON y guardar en un archivo
 		Gson gson = new GsonBuilder().enableComplexMapKeySerialization().serializeNulls().setPrettyPrinting().create();
 
 		String json = gson.toJson(ventas);
 		System.out.println(json);
-		
+
 		try (FileWriter writer = new FileWriter("json/ventas.json")) {
 			writer.write(json);
 		} catch (IOException e) {
