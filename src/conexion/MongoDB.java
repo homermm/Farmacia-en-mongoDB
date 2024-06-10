@@ -2,6 +2,7 @@ package conexion;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -47,14 +48,14 @@ public class MongoDB {
 				new Domicilio("Calle Real", 456, "Lanus", "Buenos Aires"), new ObraSocial(2, "Swiss Medical"), "67890");
 
 		Empleado e3 = new Empleado(3, "Martínez", "Martín", "40287101", "20-40287101-7",
-				new Domicilio("Güemes", 1271, "Avellaneda", "Buenos Aires"), new ObraSocial(3, "OSADEF"), "29981");
+				new Domicilio("Guemes", 1271, "Avellaneda", "Buenos Aires"), new ObraSocial(3, "OSADEF"), "29981");
 		Empleado e4 = new Empleado(4, "González", "Gonzalo", "42773881", "20-42773881-8",
 				new Domicilio("Elizalde", 108, "Avellaneda", "Buenos Aires"), new ObraSocial(4, "OSDM"), "38172");
 
 		Empleado e5 = new Empleado(5, "Messi", "Lionel", "33016244", "23-33016244-9",
 				new Domicilio("Homero", 976, "Lomas", "Buenos Aires"), new ObraSocial(5, "OSACN"), "17728");
 		Empleado e6 = new Empleado(6, "Taylor Joy", "Anya", "93662180", "27-93662180-0",
-				new Domicilio("O'Higgins", 308, "Lomas", "Buenos Aires"), new ObraSocial(6, "Galeno"), "64713");
+				new Domicilio("O Higgins", 308, "Lomas", "Buenos Aires"), new ObraSocial(6, "Galeno"), "64713");
 
 		// Genero Sucursales
 		List<Empleado> empleadosLanus = new ArrayList<>(); // Sucursal Lanus
@@ -90,20 +91,33 @@ public class MongoDB {
 		Random random = new Random();
 		String[] formasDePago = {"EFECTIVO", "TARJETA", "DEBITO"};
 		
+		
+		// Venta Aleatoria
 		for (Sucursal sucursal : List.of(sucursalLanus, sucursalAvellaneda, sucursalLomas)) {
 			for (int i = 0; i < 10; i++) {
+				
+				// Participantes Aleatorios
 				Empleado vendedor = sucursal.getEmpleados().get(i % sucursal.getEmpleados().size());
 				Empleado cajero = sucursal.getEmpleados().get((i + 1) % sucursal.getEmpleados().size());
 				Cliente cliente = clientes.get(i % clientes.size());
 				
+				// Productos Aleatorios, este for incluye incluye todos los productos, lo unico que varia es la cantidad
 				List<ProductoVenta> productosVendidos = new ArrayList<>();
 				for (Producto producto : productos) {
 					productosVendidos.add(new ProductoVenta(idVenta, producto, random.nextInt(4) + 1));
 				}
 				
+				// Forma de pago Aleatoria
 				String formaPago = formasDePago[random.nextInt(formasDePago.length)];
 				
-				Venta venta = new Venta(idVenta++, LocalDateTime.now().toString(), String.valueOf(idVenta), formaPago, cliente, vendedor, cajero, sucursal, productosVendidos);
+				// Fecha Aleatoria
+				int anio = 2024; // 2024 fijo para facilitar las queries
+				int mes = random.nextInt(12) + 1; // Entre 1 y 12
+				int dia = random.nextInt(LocalDate.of(anio, mes, 1).lengthOfMonth()) + 1; // Me aseguro de no pasarme en dias del mes por ejemplo 30 febrero
+				LocalDate fecha = LocalDate.of(anio, mes, dia);
+				
+				// Se crea la venta con los datos generados anteriormente y se añade a la lista
+				Venta venta = new Venta(idVenta++, fecha.toString(), String.valueOf(idVenta), formaPago, cliente, vendedor, cajero, sucursal, productosVendidos);
 				ventas.add(venta);
 			}
 		}

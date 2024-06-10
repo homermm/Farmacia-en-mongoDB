@@ -1,10 +1,10 @@
 [
   {
     "idVenta": 1,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-04-23",
     "numeroTicket": "2",
-    "total": 730.0,
-    "formaPago": "DEBITO",
+    "total": 470.0,
+    "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -148,8 +148,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 1,
-        "total": 30.0
+        "cantidad": 3,
+        "total": 90.0
       },
       {
         "idProductoVendido": 1,
@@ -161,8 +161,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 4,
+        "total": 80.0
       },
       {
         "idProductoVendido": 1,
@@ -174,8 +174,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 3,
-        "total": 270.0
+        "cantidad": 1,
+        "total": 90.0
       },
       {
         "idProductoVendido": 1,
@@ -187,17 +187,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 4,
-        "total": 400.0
+        "cantidad": 2,
+        "total": 200.0
       }
     ]
   },
   {
     "idVenta": 2,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-11-19",
     "numeroTicket": "3",
-    "total": 520.0,
-    "formaPago": "TARJETA",
+    "total": 800.0,
+    "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 2,
       "nombre": "Maria",
@@ -328,205 +328,12 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 2,
-        "total": 20.0
-      },
-      {
-        "idProductoVendido": 2,
-        "producto": {
-          "idProducto": 2,
-          "tipo": "Perfumeria",
-          "descripcion": "Shampoo 200ml",
-          "laboratorio": "Laboratorio B",
-          "codigoNumerico": 5678,
-          "precio": 30.0
-        },
-        "cantidad": 3,
-        "total": 90.0
-      },
-      {
-        "idProductoVendido": 2,
-        "producto": {
-          "idProducto": 3,
-          "tipo": "Perfumeria",
-          "descripcion": "Acondicionador 200ml",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 4467,
-          "precio": 20.0
-        },
-        "cantidad": 2,
+        "cantidad": 4,
         "total": 40.0
       },
       {
         "idProductoVendido": 2,
         "producto": {
-          "idProducto": 4,
-          "tipo": "Medicamento",
-          "descripcion": "Xanax",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 3108,
-          "precio": 90.0
-        },
-        "cantidad": 3,
-        "total": 270.0
-      },
-      {
-        "idProductoVendido": 2,
-        "producto": {
-          "idProducto": 5,
-          "tipo": "Medicamento",
-          "descripcion": "Magnus 50 mg",
-          "laboratorio": "Laboratorio B",
-          "codigoNumerico": 4913,
-          "precio": 100.0
-        },
-        "cantidad": 1,
-        "total": 100.0
-      }
-    ]
-  },
-  {
-    "idVenta": 3,
-    "fecha": "2024-06-10T02:36:04.349965600",
-    "numeroTicket": "4",
-    "total": 820.0,
-    "formaPago": "TARJETA",
-    "cliente": {
-      "idCliente": 3,
-      "nombre": "Juan",
-      "apellido": "Perez",
-      "dni": "67890",
-      "domicilio": {
-        "calle": "Calle C",
-        "numero": 789,
-        "localidad": "Lomas",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 3,
-        "nombre": "Galeno"
-      },
-      "numeroAfiliado": "3"
-    },
-    "empleadoVendedor": {
-      "idEmpleado": 1,
-      "apellido": "Perez",
-      "nombre": "Juan",
-      "dni": "12345678",
-      "cuil": "20-12345678-9",
-      "domicilio": {
-        "calle": "Calle Falsa",
-        "numero": 123,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 1,
-        "nombre": "OSDE"
-      },
-      "numeroAfiliado": "12345"
-    },
-    "empleadoCajero": {
-      "idEmpleado": 2,
-      "apellido": "Gomez",
-      "nombre": "Maria",
-      "dni": "87654321",
-      "cuil": "20-87654321-8",
-      "domicilio": {
-        "calle": "Calle Real",
-        "numero": 456,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 2,
-        "nombre": "Swiss Medical"
-      },
-      "numeroAfiliado": "67890"
-    },
-    "sucursal": {
-      "idSucursal": 1,
-      "domicilio": {
-        "calle": "Av. San Martin",
-        "numero": 1234,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "encargado": {
-        "idEmpleado": 1,
-        "apellido": "Perez",
-        "nombre": "Juan",
-        "dni": "12345678",
-        "cuil": "20-12345678-9",
-        "domicilio": {
-          "calle": "Calle Falsa",
-          "numero": 123,
-          "localidad": "Lanus",
-          "provincia": "Buenos Aires"
-        },
-        "obraSocial": {
-          "idObraSocial": 1,
-          "nombre": "OSDE"
-        },
-        "numeroAfiliado": "12345"
-      },
-      "empleados": [
-        {
-          "idEmpleado": 1,
-          "apellido": "Perez",
-          "nombre": "Juan",
-          "dni": "12345678",
-          "cuil": "20-12345678-9",
-          "domicilio": {
-            "calle": "Calle Falsa",
-            "numero": 123,
-            "localidad": "Lanus",
-            "provincia": "Buenos Aires"
-          },
-          "obraSocial": {
-            "idObraSocial": 1,
-            "nombre": "OSDE"
-          },
-          "numeroAfiliado": "12345"
-        },
-        {
-          "idEmpleado": 2,
-          "apellido": "Gomez",
-          "nombre": "Maria",
-          "dni": "87654321",
-          "cuil": "20-87654321-8",
-          "domicilio": {
-            "calle": "Calle Real",
-            "numero": 456,
-            "localidad": "Lanus",
-            "provincia": "Buenos Aires"
-          },
-          "obraSocial": {
-            "idObraSocial": 2,
-            "nombre": "Swiss Medical"
-          },
-          "numeroAfiliado": "67890"
-        }
-      ],
-      "puntoVenta": "1234"
-    },
-    "productosVendidos": [
-      {
-        "idProductoVendido": 3,
-        "producto": {
-          "idProducto": 1,
-          "tipo": "Medicamento",
-          "descripcion": "Paracetamol 500mg",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 3459,
-          "precio": 10.0
-        },
-        "cantidad": 3,
-        "total": 30.0
-      },
-      {
-        "idProductoVendido": 3,
-        "producto": {
           "idProducto": 2,
           "tipo": "Perfumeria",
           "descripcion": "Shampoo 200ml",
@@ -534,11 +341,11 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 2,
-        "total": 60.0
+        "cantidad": 1,
+        "total": 30.0
       },
       {
-        "idProductoVendido": 3,
+        "idProductoVendido": 2,
         "producto": {
           "idProducto": 3,
           "tipo": "Perfumeria",
@@ -551,7 +358,7 @@
         "total": 60.0
       },
       {
-        "idProductoVendido": 3,
+        "idProductoVendido": 2,
         "producto": {
           "idProducto": 4,
           "tipo": "Medicamento",
@@ -564,7 +371,7 @@
         "total": 270.0
       },
       {
-        "idProductoVendido": 3,
+        "idProductoVendido": 2,
         "producto": {
           "idProducto": 5,
           "tipo": "Medicamento",
@@ -579,396 +386,10 @@
     ]
   },
   {
-    "idVenta": 4,
-    "fecha": "2024-06-10T02:36:04.349965600",
-    "numeroTicket": "5",
-    "total": 620.0,
-    "formaPago": "EFECTIVO",
-    "cliente": {
-      "idCliente": 1,
-      "nombre": "Jose",
-      "apellido": "San Martin",
-      "dni": "12345",
-      "domicilio": {
-        "calle": "Calle A",
-        "numero": 123,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 1,
-        "nombre": "OSDE"
-      },
-      "numeroAfiliado": "1"
-    },
-    "empleadoVendedor": {
-      "idEmpleado": 2,
-      "apellido": "Gomez",
-      "nombre": "Maria",
-      "dni": "87654321",
-      "cuil": "20-87654321-8",
-      "domicilio": {
-        "calle": "Calle Real",
-        "numero": 456,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 2,
-        "nombre": "Swiss Medical"
-      },
-      "numeroAfiliado": "67890"
-    },
-    "empleadoCajero": {
-      "idEmpleado": 1,
-      "apellido": "Perez",
-      "nombre": "Juan",
-      "dni": "12345678",
-      "cuil": "20-12345678-9",
-      "domicilio": {
-        "calle": "Calle Falsa",
-        "numero": 123,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 1,
-        "nombre": "OSDE"
-      },
-      "numeroAfiliado": "12345"
-    },
-    "sucursal": {
-      "idSucursal": 1,
-      "domicilio": {
-        "calle": "Av. San Martin",
-        "numero": 1234,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "encargado": {
-        "idEmpleado": 1,
-        "apellido": "Perez",
-        "nombre": "Juan",
-        "dni": "12345678",
-        "cuil": "20-12345678-9",
-        "domicilio": {
-          "calle": "Calle Falsa",
-          "numero": 123,
-          "localidad": "Lanus",
-          "provincia": "Buenos Aires"
-        },
-        "obraSocial": {
-          "idObraSocial": 1,
-          "nombre": "OSDE"
-        },
-        "numeroAfiliado": "12345"
-      },
-      "empleados": [
-        {
-          "idEmpleado": 1,
-          "apellido": "Perez",
-          "nombre": "Juan",
-          "dni": "12345678",
-          "cuil": "20-12345678-9",
-          "domicilio": {
-            "calle": "Calle Falsa",
-            "numero": 123,
-            "localidad": "Lanus",
-            "provincia": "Buenos Aires"
-          },
-          "obraSocial": {
-            "idObraSocial": 1,
-            "nombre": "OSDE"
-          },
-          "numeroAfiliado": "12345"
-        },
-        {
-          "idEmpleado": 2,
-          "apellido": "Gomez",
-          "nombre": "Maria",
-          "dni": "87654321",
-          "cuil": "20-87654321-8",
-          "domicilio": {
-            "calle": "Calle Real",
-            "numero": 456,
-            "localidad": "Lanus",
-            "provincia": "Buenos Aires"
-          },
-          "obraSocial": {
-            "idObraSocial": 2,
-            "nombre": "Swiss Medical"
-          },
-          "numeroAfiliado": "67890"
-        }
-      ],
-      "puntoVenta": "1234"
-    },
-    "productosVendidos": [
-      {
-        "idProductoVendido": 4,
-        "producto": {
-          "idProducto": 1,
-          "tipo": "Medicamento",
-          "descripcion": "Paracetamol 500mg",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 3459,
-          "precio": 10.0
-        },
-        "cantidad": 2,
-        "total": 20.0
-      },
-      {
-        "idProductoVendido": 4,
-        "producto": {
-          "idProducto": 2,
-          "tipo": "Perfumeria",
-          "descripcion": "Shampoo 200ml",
-          "laboratorio": "Laboratorio B",
-          "codigoNumerico": 5678,
-          "precio": 30.0
-        },
-        "cantidad": 3,
-        "total": 90.0
-      },
-      {
-        "idProductoVendido": 4,
-        "producto": {
-          "idProducto": 3,
-          "tipo": "Perfumeria",
-          "descripcion": "Acondicionador 200ml",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 4467,
-          "precio": 20.0
-        },
-        "cantidad": 2,
-        "total": 40.0
-      },
-      {
-        "idProductoVendido": 4,
-        "producto": {
-          "idProducto": 4,
-          "tipo": "Medicamento",
-          "descripcion": "Xanax",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 3108,
-          "precio": 90.0
-        },
-        "cantidad": 3,
-        "total": 270.0
-      },
-      {
-        "idProductoVendido": 4,
-        "producto": {
-          "idProducto": 5,
-          "tipo": "Medicamento",
-          "descripcion": "Magnus 50 mg",
-          "laboratorio": "Laboratorio B",
-          "codigoNumerico": 4913,
-          "precio": 100.0
-        },
-        "cantidad": 2,
-        "total": 200.0
-      }
-    ]
-  },
-  {
-    "idVenta": 5,
-    "fecha": "2024-06-10T02:36:04.349965600",
-    "numeroTicket": "6",
-    "total": 710.0,
-    "formaPago": "EFECTIVO",
-    "cliente": {
-      "idCliente": 2,
-      "nombre": "Maria",
-      "apellido": "Gonzalez",
-      "dni": "54321",
-      "domicilio": {
-        "calle": "Calle B",
-        "numero": 456,
-        "localidad": "Avellaneda",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 2,
-        "nombre": "Swiss Medical"
-      },
-      "numeroAfiliado": "2"
-    },
-    "empleadoVendedor": {
-      "idEmpleado": 1,
-      "apellido": "Perez",
-      "nombre": "Juan",
-      "dni": "12345678",
-      "cuil": "20-12345678-9",
-      "domicilio": {
-        "calle": "Calle Falsa",
-        "numero": 123,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 1,
-        "nombre": "OSDE"
-      },
-      "numeroAfiliado": "12345"
-    },
-    "empleadoCajero": {
-      "idEmpleado": 2,
-      "apellido": "Gomez",
-      "nombre": "Maria",
-      "dni": "87654321",
-      "cuil": "20-87654321-8",
-      "domicilio": {
-        "calle": "Calle Real",
-        "numero": 456,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 2,
-        "nombre": "Swiss Medical"
-      },
-      "numeroAfiliado": "67890"
-    },
-    "sucursal": {
-      "idSucursal": 1,
-      "domicilio": {
-        "calle": "Av. San Martin",
-        "numero": 1234,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "encargado": {
-        "idEmpleado": 1,
-        "apellido": "Perez",
-        "nombre": "Juan",
-        "dni": "12345678",
-        "cuil": "20-12345678-9",
-        "domicilio": {
-          "calle": "Calle Falsa",
-          "numero": 123,
-          "localidad": "Lanus",
-          "provincia": "Buenos Aires"
-        },
-        "obraSocial": {
-          "idObraSocial": 1,
-          "nombre": "OSDE"
-        },
-        "numeroAfiliado": "12345"
-      },
-      "empleados": [
-        {
-          "idEmpleado": 1,
-          "apellido": "Perez",
-          "nombre": "Juan",
-          "dni": "12345678",
-          "cuil": "20-12345678-9",
-          "domicilio": {
-            "calle": "Calle Falsa",
-            "numero": 123,
-            "localidad": "Lanus",
-            "provincia": "Buenos Aires"
-          },
-          "obraSocial": {
-            "idObraSocial": 1,
-            "nombre": "OSDE"
-          },
-          "numeroAfiliado": "12345"
-        },
-        {
-          "idEmpleado": 2,
-          "apellido": "Gomez",
-          "nombre": "Maria",
-          "dni": "87654321",
-          "cuil": "20-87654321-8",
-          "domicilio": {
-            "calle": "Calle Real",
-            "numero": 456,
-            "localidad": "Lanus",
-            "provincia": "Buenos Aires"
-          },
-          "obraSocial": {
-            "idObraSocial": 2,
-            "nombre": "Swiss Medical"
-          },
-          "numeroAfiliado": "67890"
-        }
-      ],
-      "puntoVenta": "1234"
-    },
-    "productosVendidos": [
-      {
-        "idProductoVendido": 5,
-        "producto": {
-          "idProducto": 1,
-          "tipo": "Medicamento",
-          "descripcion": "Paracetamol 500mg",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 3459,
-          "precio": 10.0
-        },
-        "cantidad": 2,
-        "total": 20.0
-      },
-      {
-        "idProductoVendido": 5,
-        "producto": {
-          "idProducto": 2,
-          "tipo": "Perfumeria",
-          "descripcion": "Shampoo 200ml",
-          "laboratorio": "Laboratorio B",
-          "codigoNumerico": 5678,
-          "precio": 30.0
-        },
-        "cantidad": 3,
-        "total": 90.0
-      },
-      {
-        "idProductoVendido": 5,
-        "producto": {
-          "idProducto": 3,
-          "tipo": "Perfumeria",
-          "descripcion": "Acondicionador 200ml",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 4467,
-          "precio": 20.0
-        },
-        "cantidad": 2,
-        "total": 40.0
-      },
-      {
-        "idProductoVendido": 5,
-        "producto": {
-          "idProducto": 4,
-          "tipo": "Medicamento",
-          "descripcion": "Xanax",
-          "laboratorio": "Laboratorio A",
-          "codigoNumerico": 3108,
-          "precio": 90.0
-        },
-        "cantidad": 4,
-        "total": 360.0
-      },
-      {
-        "idProductoVendido": 5,
-        "producto": {
-          "idProducto": 5,
-          "tipo": "Medicamento",
-          "descripcion": "Magnus 50 mg",
-          "laboratorio": "Laboratorio B",
-          "codigoNumerico": 4913,
-          "precio": 100.0
-        },
-        "cantidad": 2,
-        "total": 200.0
-      }
-    ]
-  },
-  {
-    "idVenta": 6,
-    "fecha": "2024-06-10T02:36:04.349965600",
-    "numeroTicket": "7",
-    "total": 770.0,
+    "idVenta": 3,
+    "fecha": "2024-12-16",
+    "numeroTicket": "4",
+    "total": 760.0,
     "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 3,
@@ -988,24 +409,6 @@
       "numeroAfiliado": "3"
     },
     "empleadoVendedor": {
-      "idEmpleado": 2,
-      "apellido": "Gomez",
-      "nombre": "Maria",
-      "dni": "87654321",
-      "cuil": "20-87654321-8",
-      "domicilio": {
-        "calle": "Calle Real",
-        "numero": 456,
-        "localidad": "Lanus",
-        "provincia": "Buenos Aires"
-      },
-      "obraSocial": {
-        "idObraSocial": 2,
-        "nombre": "Swiss Medical"
-      },
-      "numeroAfiliado": "67890"
-    },
-    "empleadoCajero": {
       "idEmpleado": 1,
       "apellido": "Perez",
       "nombre": "Juan",
@@ -1022,6 +425,24 @@
         "nombre": "OSDE"
       },
       "numeroAfiliado": "12345"
+    },
+    "empleadoCajero": {
+      "idEmpleado": 2,
+      "apellido": "Gomez",
+      "nombre": "Maria",
+      "dni": "87654321",
+      "cuil": "20-87654321-8",
+      "domicilio": {
+        "calle": "Calle Real",
+        "numero": 456,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 2,
+        "nombre": "Swiss Medical"
+      },
+      "numeroAfiliado": "67890"
     },
     "sucursal": {
       "idSucursal": 1,
@@ -1091,7 +512,7 @@
     },
     "productosVendidos": [
       {
-        "idProductoVendido": 6,
+        "idProductoVendido": 3,
         "producto": {
           "idProducto": 1,
           "tipo": "Medicamento",
@@ -1100,11 +521,11 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 2,
-        "total": 20.0
+        "cantidad": 3,
+        "total": 30.0
       },
       {
-        "idProductoVendido": 6,
+        "idProductoVendido": 3,
         "producto": {
           "idProducto": 2,
           "tipo": "Perfumeria",
@@ -1113,11 +534,11 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 1,
-        "total": 30.0
+        "cantidad": 4,
+        "total": 120.0
       },
       {
-        "idProductoVendido": 6,
+        "idProductoVendido": 3,
         "producto": {
           "idProducto": 3,
           "tipo": "Perfumeria",
@@ -1126,11 +547,11 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 3,
-        "total": 60.0
+        "cantidad": 2,
+        "total": 40.0
       },
       {
-        "idProductoVendido": 6,
+        "idProductoVendido": 3,
         "producto": {
           "idProducto": 4,
           "tipo": "Medicamento",
@@ -1139,11 +560,11 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 4,
-        "total": 360.0
+        "cantidad": 3,
+        "total": 270.0
       },
       {
-        "idProductoVendido": 6,
+        "idProductoVendido": 3,
         "producto": {
           "idProducto": 5,
           "tipo": "Medicamento",
@@ -1158,11 +579,590 @@
     ]
   },
   {
+    "idVenta": 4,
+    "fecha": "2024-04-20",
+    "numeroTicket": "5",
+    "total": 770.0,
+    "formaPago": "DEBITO",
+    "cliente": {
+      "idCliente": 1,
+      "nombre": "Jose",
+      "apellido": "San Martin",
+      "dni": "12345",
+      "domicilio": {
+        "calle": "Calle A",
+        "numero": 123,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 1,
+        "nombre": "OSDE"
+      },
+      "numeroAfiliado": "1"
+    },
+    "empleadoVendedor": {
+      "idEmpleado": 2,
+      "apellido": "Gomez",
+      "nombre": "Maria",
+      "dni": "87654321",
+      "cuil": "20-87654321-8",
+      "domicilio": {
+        "calle": "Calle Real",
+        "numero": 456,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 2,
+        "nombre": "Swiss Medical"
+      },
+      "numeroAfiliado": "67890"
+    },
+    "empleadoCajero": {
+      "idEmpleado": 1,
+      "apellido": "Perez",
+      "nombre": "Juan",
+      "dni": "12345678",
+      "cuil": "20-12345678-9",
+      "domicilio": {
+        "calle": "Calle Falsa",
+        "numero": 123,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 1,
+        "nombre": "OSDE"
+      },
+      "numeroAfiliado": "12345"
+    },
+    "sucursal": {
+      "idSucursal": 1,
+      "domicilio": {
+        "calle": "Av. San Martin",
+        "numero": 1234,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "encargado": {
+        "idEmpleado": 1,
+        "apellido": "Perez",
+        "nombre": "Juan",
+        "dni": "12345678",
+        "cuil": "20-12345678-9",
+        "domicilio": {
+          "calle": "Calle Falsa",
+          "numero": 123,
+          "localidad": "Lanus",
+          "provincia": "Buenos Aires"
+        },
+        "obraSocial": {
+          "idObraSocial": 1,
+          "nombre": "OSDE"
+        },
+        "numeroAfiliado": "12345"
+      },
+      "empleados": [
+        {
+          "idEmpleado": 1,
+          "apellido": "Perez",
+          "nombre": "Juan",
+          "dni": "12345678",
+          "cuil": "20-12345678-9",
+          "domicilio": {
+            "calle": "Calle Falsa",
+            "numero": 123,
+            "localidad": "Lanus",
+            "provincia": "Buenos Aires"
+          },
+          "obraSocial": {
+            "idObraSocial": 1,
+            "nombre": "OSDE"
+          },
+          "numeroAfiliado": "12345"
+        },
+        {
+          "idEmpleado": 2,
+          "apellido": "Gomez",
+          "nombre": "Maria",
+          "dni": "87654321",
+          "cuil": "20-87654321-8",
+          "domicilio": {
+            "calle": "Calle Real",
+            "numero": 456,
+            "localidad": "Lanus",
+            "provincia": "Buenos Aires"
+          },
+          "obraSocial": {
+            "idObraSocial": 2,
+            "nombre": "Swiss Medical"
+          },
+          "numeroAfiliado": "67890"
+        }
+      ],
+      "puntoVenta": "1234"
+    },
+    "productosVendidos": [
+      {
+        "idProductoVendido": 4,
+        "producto": {
+          "idProducto": 1,
+          "tipo": "Medicamento",
+          "descripcion": "Paracetamol 500mg",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 3459,
+          "precio": 10.0
+        },
+        "cantidad": 1,
+        "total": 10.0
+      },
+      {
+        "idProductoVendido": 4,
+        "producto": {
+          "idProducto": 2,
+          "tipo": "Perfumeria",
+          "descripcion": "Shampoo 200ml",
+          "laboratorio": "Laboratorio B",
+          "codigoNumerico": 5678,
+          "precio": 30.0
+        },
+        "cantidad": 2,
+        "total": 60.0
+      },
+      {
+        "idProductoVendido": 4,
+        "producto": {
+          "idProducto": 3,
+          "tipo": "Perfumeria",
+          "descripcion": "Acondicionador 200ml",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 4467,
+          "precio": 20.0
+        },
+        "cantidad": 2,
+        "total": 40.0
+      },
+      {
+        "idProductoVendido": 4,
+        "producto": {
+          "idProducto": 4,
+          "tipo": "Medicamento",
+          "descripcion": "Xanax",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 3108,
+          "precio": 90.0
+        },
+        "cantidad": 4,
+        "total": 360.0
+      },
+      {
+        "idProductoVendido": 4,
+        "producto": {
+          "idProducto": 5,
+          "tipo": "Medicamento",
+          "descripcion": "Magnus 50 mg",
+          "laboratorio": "Laboratorio B",
+          "codigoNumerico": 4913,
+          "precio": 100.0
+        },
+        "cantidad": 3,
+        "total": 300.0
+      }
+    ]
+  },
+  {
+    "idVenta": 5,
+    "fecha": "2024-11-17",
+    "numeroTicket": "6",
+    "total": 840.0,
+    "formaPago": "DEBITO",
+    "cliente": {
+      "idCliente": 2,
+      "nombre": "Maria",
+      "apellido": "Gonzalez",
+      "dni": "54321",
+      "domicilio": {
+        "calle": "Calle B",
+        "numero": 456,
+        "localidad": "Avellaneda",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 2,
+        "nombre": "Swiss Medical"
+      },
+      "numeroAfiliado": "2"
+    },
+    "empleadoVendedor": {
+      "idEmpleado": 1,
+      "apellido": "Perez",
+      "nombre": "Juan",
+      "dni": "12345678",
+      "cuil": "20-12345678-9",
+      "domicilio": {
+        "calle": "Calle Falsa",
+        "numero": 123,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 1,
+        "nombre": "OSDE"
+      },
+      "numeroAfiliado": "12345"
+    },
+    "empleadoCajero": {
+      "idEmpleado": 2,
+      "apellido": "Gomez",
+      "nombre": "Maria",
+      "dni": "87654321",
+      "cuil": "20-87654321-8",
+      "domicilio": {
+        "calle": "Calle Real",
+        "numero": 456,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 2,
+        "nombre": "Swiss Medical"
+      },
+      "numeroAfiliado": "67890"
+    },
+    "sucursal": {
+      "idSucursal": 1,
+      "domicilio": {
+        "calle": "Av. San Martin",
+        "numero": 1234,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "encargado": {
+        "idEmpleado": 1,
+        "apellido": "Perez",
+        "nombre": "Juan",
+        "dni": "12345678",
+        "cuil": "20-12345678-9",
+        "domicilio": {
+          "calle": "Calle Falsa",
+          "numero": 123,
+          "localidad": "Lanus",
+          "provincia": "Buenos Aires"
+        },
+        "obraSocial": {
+          "idObraSocial": 1,
+          "nombre": "OSDE"
+        },
+        "numeroAfiliado": "12345"
+      },
+      "empleados": [
+        {
+          "idEmpleado": 1,
+          "apellido": "Perez",
+          "nombre": "Juan",
+          "dni": "12345678",
+          "cuil": "20-12345678-9",
+          "domicilio": {
+            "calle": "Calle Falsa",
+            "numero": 123,
+            "localidad": "Lanus",
+            "provincia": "Buenos Aires"
+          },
+          "obraSocial": {
+            "idObraSocial": 1,
+            "nombre": "OSDE"
+          },
+          "numeroAfiliado": "12345"
+        },
+        {
+          "idEmpleado": 2,
+          "apellido": "Gomez",
+          "nombre": "Maria",
+          "dni": "87654321",
+          "cuil": "20-87654321-8",
+          "domicilio": {
+            "calle": "Calle Real",
+            "numero": 456,
+            "localidad": "Lanus",
+            "provincia": "Buenos Aires"
+          },
+          "obraSocial": {
+            "idObraSocial": 2,
+            "nombre": "Swiss Medical"
+          },
+          "numeroAfiliado": "67890"
+        }
+      ],
+      "puntoVenta": "1234"
+    },
+    "productosVendidos": [
+      {
+        "idProductoVendido": 5,
+        "producto": {
+          "idProducto": 1,
+          "tipo": "Medicamento",
+          "descripcion": "Paracetamol 500mg",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 3459,
+          "precio": 10.0
+        },
+        "cantidad": 4,
+        "total": 40.0
+      },
+      {
+        "idProductoVendido": 5,
+        "producto": {
+          "idProducto": 2,
+          "tipo": "Perfumeria",
+          "descripcion": "Shampoo 200ml",
+          "laboratorio": "Laboratorio B",
+          "codigoNumerico": 5678,
+          "precio": 30.0
+        },
+        "cantidad": 4,
+        "total": 120.0
+      },
+      {
+        "idProductoVendido": 5,
+        "producto": {
+          "idProducto": 3,
+          "tipo": "Perfumeria",
+          "descripcion": "Acondicionador 200ml",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 4467,
+          "precio": 20.0
+        },
+        "cantidad": 1,
+        "total": 20.0
+      },
+      {
+        "idProductoVendido": 5,
+        "producto": {
+          "idProducto": 4,
+          "tipo": "Medicamento",
+          "descripcion": "Xanax",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 3108,
+          "precio": 90.0
+        },
+        "cantidad": 4,
+        "total": 360.0
+      },
+      {
+        "idProductoVendido": 5,
+        "producto": {
+          "idProducto": 5,
+          "tipo": "Medicamento",
+          "descripcion": "Magnus 50 mg",
+          "laboratorio": "Laboratorio B",
+          "codigoNumerico": 4913,
+          "precio": 100.0
+        },
+        "cantidad": 3,
+        "total": 300.0
+      }
+    ]
+  },
+  {
+    "idVenta": 6,
+    "fecha": "2024-01-18",
+    "numeroTicket": "7",
+    "total": 850.0,
+    "formaPago": "DEBITO",
+    "cliente": {
+      "idCliente": 3,
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "dni": "67890",
+      "domicilio": {
+        "calle": "Calle C",
+        "numero": 789,
+        "localidad": "Lomas",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 3,
+        "nombre": "Galeno"
+      },
+      "numeroAfiliado": "3"
+    },
+    "empleadoVendedor": {
+      "idEmpleado": 2,
+      "apellido": "Gomez",
+      "nombre": "Maria",
+      "dni": "87654321",
+      "cuil": "20-87654321-8",
+      "domicilio": {
+        "calle": "Calle Real",
+        "numero": 456,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 2,
+        "nombre": "Swiss Medical"
+      },
+      "numeroAfiliado": "67890"
+    },
+    "empleadoCajero": {
+      "idEmpleado": 1,
+      "apellido": "Perez",
+      "nombre": "Juan",
+      "dni": "12345678",
+      "cuil": "20-12345678-9",
+      "domicilio": {
+        "calle": "Calle Falsa",
+        "numero": 123,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "obraSocial": {
+        "idObraSocial": 1,
+        "nombre": "OSDE"
+      },
+      "numeroAfiliado": "12345"
+    },
+    "sucursal": {
+      "idSucursal": 1,
+      "domicilio": {
+        "calle": "Av. San Martin",
+        "numero": 1234,
+        "localidad": "Lanus",
+        "provincia": "Buenos Aires"
+      },
+      "encargado": {
+        "idEmpleado": 1,
+        "apellido": "Perez",
+        "nombre": "Juan",
+        "dni": "12345678",
+        "cuil": "20-12345678-9",
+        "domicilio": {
+          "calle": "Calle Falsa",
+          "numero": 123,
+          "localidad": "Lanus",
+          "provincia": "Buenos Aires"
+        },
+        "obraSocial": {
+          "idObraSocial": 1,
+          "nombre": "OSDE"
+        },
+        "numeroAfiliado": "12345"
+      },
+      "empleados": [
+        {
+          "idEmpleado": 1,
+          "apellido": "Perez",
+          "nombre": "Juan",
+          "dni": "12345678",
+          "cuil": "20-12345678-9",
+          "domicilio": {
+            "calle": "Calle Falsa",
+            "numero": 123,
+            "localidad": "Lanus",
+            "provincia": "Buenos Aires"
+          },
+          "obraSocial": {
+            "idObraSocial": 1,
+            "nombre": "OSDE"
+          },
+          "numeroAfiliado": "12345"
+        },
+        {
+          "idEmpleado": 2,
+          "apellido": "Gomez",
+          "nombre": "Maria",
+          "dni": "87654321",
+          "cuil": "20-87654321-8",
+          "domicilio": {
+            "calle": "Calle Real",
+            "numero": 456,
+            "localidad": "Lanus",
+            "provincia": "Buenos Aires"
+          },
+          "obraSocial": {
+            "idObraSocial": 2,
+            "nombre": "Swiss Medical"
+          },
+          "numeroAfiliado": "67890"
+        }
+      ],
+      "puntoVenta": "1234"
+    },
+    "productosVendidos": [
+      {
+        "idProductoVendido": 6,
+        "producto": {
+          "idProducto": 1,
+          "tipo": "Medicamento",
+          "descripcion": "Paracetamol 500mg",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 3459,
+          "precio": 10.0
+        },
+        "cantidad": 4,
+        "total": 40.0
+      },
+      {
+        "idProductoVendido": 6,
+        "producto": {
+          "idProducto": 2,
+          "tipo": "Perfumeria",
+          "descripcion": "Shampoo 200ml",
+          "laboratorio": "Laboratorio B",
+          "codigoNumerico": 5678,
+          "precio": 30.0
+        },
+        "cantidad": 4,
+        "total": 120.0
+      },
+      {
+        "idProductoVendido": 6,
+        "producto": {
+          "idProducto": 3,
+          "tipo": "Perfumeria",
+          "descripcion": "Acondicionador 200ml",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 4467,
+          "precio": 20.0
+        },
+        "cantidad": 1,
+        "total": 20.0
+      },
+      {
+        "idProductoVendido": 6,
+        "producto": {
+          "idProducto": 4,
+          "tipo": "Medicamento",
+          "descripcion": "Xanax",
+          "laboratorio": "Laboratorio A",
+          "codigoNumerico": 3108,
+          "precio": 90.0
+        },
+        "cantidad": 3,
+        "total": 270.0
+      },
+      {
+        "idProductoVendido": 6,
+        "producto": {
+          "idProducto": 5,
+          "tipo": "Medicamento",
+          "descripcion": "Magnus 50 mg",
+          "laboratorio": "Laboratorio B",
+          "codigoNumerico": 4913,
+          "precio": 100.0
+        },
+        "cantidad": 4,
+        "total": 400.0
+      }
+    ]
+  },
+  {
     "idVenta": 7,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-09-01",
     "numeroTicket": "8",
-    "total": 600.0,
-    "formaPago": "EFECTIVO",
+    "total": 490.0,
+    "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -1293,8 +1293,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 2,
-        "total": 20.0
+        "cantidad": 3,
+        "total": 30.0
       },
       {
         "idProductoVendido": 7,
@@ -1306,8 +1306,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 2,
-        "total": 60.0
+        "cantidad": 3,
+        "total": 90.0
       },
       {
         "idProductoVendido": 7,
@@ -1319,8 +1319,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 3,
-        "total": 60.0
+        "cantidad": 4,
+        "total": 80.0
       },
       {
         "idProductoVendido": 7,
@@ -1332,8 +1332,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 4,
-        "total": 360.0
+        "cantidad": 1,
+        "total": 90.0
       },
       {
         "idProductoVendido": 7,
@@ -1345,16 +1345,16 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 1,
-        "total": 100.0
+        "cantidad": 2,
+        "total": 200.0
       }
     ]
   },
   {
     "idVenta": 8,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-09-08",
     "numeroTicket": "9",
-    "total": 370.0,
+    "total": 450.0,
     "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 2,
@@ -1486,8 +1486,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 4,
-        "total": 40.0
+        "cantidad": 2,
+        "total": 20.0
       },
       {
         "idProductoVendido": 8,
@@ -1499,8 +1499,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 1,
+        "total": 30.0
       },
       {
         "idProductoVendido": 8,
@@ -1525,8 +1525,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 1,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 180.0
       },
       {
         "idProductoVendido": 8,
@@ -1538,16 +1538,16 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 1,
-        "total": 100.0
+        "cantidad": 2,
+        "total": 200.0
       }
     ]
   },
   {
     "idVenta": 9,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-03-06",
     "numeroTicket": "10",
-    "total": 820.0,
+    "total": 850.0,
     "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 3,
@@ -1692,8 +1692,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 3,
-        "total": 90.0
+        "cantidad": 1,
+        "total": 30.0
       },
       {
         "idProductoVendido": 9,
@@ -1718,8 +1718,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 3,
-        "total": 270.0
+        "cantidad": 4,
+        "total": 360.0
       },
       {
         "idProductoVendido": 9,
@@ -1738,10 +1738,10 @@
   },
   {
     "idVenta": 10,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-05-15",
     "numeroTicket": "11",
-    "total": 800.0,
-    "formaPago": "EFECTIVO",
+    "total": 930.0,
+    "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -1885,8 +1885,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 3,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 10,
@@ -1898,8 +1898,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 4,
+        "total": 80.0
       },
       {
         "idProductoVendido": 10,
@@ -1924,16 +1924,16 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 3,
-        "total": 300.0
+        "cantidad": 4,
+        "total": 400.0
       }
     ]
   },
   {
     "idVenta": 11,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-06-04",
     "numeroTicket": "12",
-    "total": 300.0,
+    "total": 500.0,
     "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 1,
@@ -2065,8 +2065,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 2,
-        "total": 20.0
+        "cantidad": 1,
+        "total": 10.0
       },
       {
         "idProductoVendido": 11,
@@ -2078,8 +2078,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 1,
-        "total": 30.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 11,
@@ -2104,8 +2104,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 1,
-        "total": 90.0
+        "cantidad": 3,
+        "total": 270.0
       },
       {
         "idProductoVendido": 11,
@@ -2124,9 +2124,9 @@
   },
   {
     "idVenta": 12,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-02-06",
     "numeroTicket": "13",
-    "total": 440.0,
+    "total": 730.0,
     "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 2,
@@ -2258,8 +2258,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 1,
-        "total": 10.0
+        "cantidad": 3,
+        "total": 30.0
       },
       {
         "idProductoVendido": 12,
@@ -2271,8 +2271,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 1,
-        "total": 30.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 12,
@@ -2284,8 +2284,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 3,
+        "total": 60.0
       },
       {
         "idProductoVendido": 12,
@@ -2310,17 +2310,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 2,
-        "total": 200.0
+        "cantidad": 4,
+        "total": 400.0
       }
     ]
   },
   {
     "idVenta": 13,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-01-11",
     "numeroTicket": "14",
-    "total": 690.0,
-    "formaPago": "TARJETA",
+    "total": 660.0,
+    "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 3,
       "nombre": "Juan",
@@ -2451,8 +2451,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 3,
-        "total": 30.0
+        "cantidad": 1,
+        "total": 10.0
       },
       {
         "idProductoVendido": 13,
@@ -2464,8 +2464,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 13,
@@ -2477,8 +2477,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 3,
-        "total": 60.0
+        "cantidad": 1,
+        "total": 20.0
       },
       {
         "idProductoVendido": 13,
@@ -2490,8 +2490,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 2,
-        "total": 180.0
+        "cantidad": 3,
+        "total": 270.0
       },
       {
         "idProductoVendido": 13,
@@ -2510,10 +2510,10 @@
   },
   {
     "idVenta": 14,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-12-16",
     "numeroTicket": "15",
-    "total": 560.0,
-    "formaPago": "EFECTIVO",
+    "total": 900.0,
+    "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -2644,8 +2644,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 1,
-        "total": 10.0
+        "cantidad": 4,
+        "total": 40.0
       },
       {
         "idProductoVendido": 14,
@@ -2670,8 +2670,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 2,
+        "total": 40.0
       },
       {
         "idProductoVendido": 14,
@@ -2683,8 +2683,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 3,
-        "total": 270.0
+        "cantidad": 4,
+        "total": 360.0
       },
       {
         "idProductoVendido": 14,
@@ -2696,17 +2696,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 2,
-        "total": 200.0
+        "cantidad": 4,
+        "total": 400.0
       }
     ]
   },
   {
     "idVenta": 15,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-02-02",
     "numeroTicket": "16",
-    "total": 940.0,
-    "formaPago": "TARJETA",
+    "total": 730.0,
+    "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 2,
       "nombre": "Maria",
@@ -2837,8 +2837,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 4,
-        "total": 40.0
+        "cantidad": 1,
+        "total": 10.0
       },
       {
         "idProductoVendido": 15,
@@ -2850,8 +2850,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 2,
-        "total": 60.0
+        "cantidad": 1,
+        "total": 30.0
       },
       {
         "idProductoVendido": 15,
@@ -2863,8 +2863,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 4,
-        "total": 80.0
+        "cantidad": 1,
+        "total": 20.0
       },
       {
         "idProductoVendido": 15,
@@ -2876,8 +2876,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 4,
-        "total": 360.0
+        "cantidad": 3,
+        "total": 270.0
       },
       {
         "idProductoVendido": 15,
@@ -2896,9 +2896,9 @@
   },
   {
     "idVenta": 16,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-04-12",
     "numeroTicket": "17",
-    "total": 620.0,
+    "total": 540.0,
     "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 3,
@@ -3043,8 +3043,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 3,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 16,
@@ -3056,8 +3056,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 3,
+        "total": 60.0
       },
       {
         "idProductoVendido": 16,
@@ -3069,8 +3069,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 2,
-        "total": 180.0
+        "cantidad": 1,
+        "total": 90.0
       },
       {
         "idProductoVendido": 16,
@@ -3089,10 +3089,10 @@
   },
   {
     "idVenta": 17,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-01-25",
     "numeroTicket": "18",
-    "total": 400.0,
-    "formaPago": "EFECTIVO",
+    "total": 890.0,
+    "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -3223,8 +3223,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 1,
-        "total": 10.0
+        "cantidad": 3,
+        "total": 30.0
       },
       {
         "idProductoVendido": 17,
@@ -3262,8 +3262,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 1,
-        "total": 90.0
+        "cantidad": 4,
+        "total": 360.0
       },
       {
         "idProductoVendido": 17,
@@ -3275,17 +3275,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 2,
-        "total": 200.0
+        "cantidad": 4,
+        "total": 400.0
       }
     ]
   },
   {
     "idVenta": 18,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-10-10",
     "numeroTicket": "19",
-    "total": 550.0,
-    "formaPago": "EFECTIVO",
+    "total": 710.0,
+    "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 2,
       "nombre": "Maria",
@@ -3429,8 +3429,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 3,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 18,
@@ -3455,8 +3455,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 1,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 180.0
       },
       {
         "idProductoVendido": 18,
@@ -3468,17 +3468,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 3,
-        "total": 300.0
+        "cantidad": 4,
+        "total": 400.0
       }
     ]
   },
   {
     "idVenta": 19,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-02-02",
     "numeroTicket": "20",
-    "total": 630.0,
-    "formaPago": "TARJETA",
+    "total": 780.0,
+    "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 3,
       "nombre": "Juan",
@@ -3609,8 +3609,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 3,
-        "total": 30.0
+        "cantidad": 1,
+        "total": 10.0
       },
       {
         "idProductoVendido": 19,
@@ -3622,8 +3622,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 3,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 19,
@@ -3635,8 +3635,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 2,
+        "total": 40.0
       },
       {
         "idProductoVendido": 19,
@@ -3648,8 +3648,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 1,
-        "total": 90.0
+        "cantidad": 3,
+        "total": 270.0
       },
       {
         "idProductoVendido": 19,
@@ -3668,9 +3668,9 @@
   },
   {
     "idVenta": 20,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-11-14",
     "numeroTicket": "21",
-    "total": 770.0,
+    "total": 750.0,
     "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 1,
@@ -3802,8 +3802,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 3,
-        "total": 30.0
+        "cantidad": 4,
+        "total": 40.0
       },
       {
         "idProductoVendido": 20,
@@ -3815,8 +3815,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 3,
+        "total": 90.0
       },
       {
         "idProductoVendido": 20,
@@ -3861,10 +3861,10 @@
   },
   {
     "idVenta": 21,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-07-02",
     "numeroTicket": "22",
-    "total": 490.0,
-    "formaPago": "DEBITO",
+    "total": 480.0,
+    "formaPago": "TARJETA",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -3995,8 +3995,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 1,
-        "total": 10.0
+        "cantidad": 3,
+        "total": 30.0
       },
       {
         "idProductoVendido": 21,
@@ -4021,8 +4021,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 2,
-        "total": 40.0
+        "cantidad": 1,
+        "total": 20.0
       },
       {
         "idProductoVendido": 21,
@@ -4034,8 +4034,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 2,
-        "total": 180.0
+        "cantidad": 3,
+        "total": 270.0
       },
       {
         "idProductoVendido": 21,
@@ -4047,17 +4047,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 2,
-        "total": 200.0
+        "cantidad": 1,
+        "total": 100.0
       }
     ]
   },
   {
     "idVenta": 22,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-11-27",
     "numeroTicket": "23",
-    "total": 750.0,
-    "formaPago": "TARJETA",
+    "total": 690.0,
+    "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 2,
       "nombre": "Maria",
@@ -4188,8 +4188,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 1,
-        "total": 10.0
+        "cantidad": 3,
+        "total": 30.0
       },
       {
         "idProductoVendido": 22,
@@ -4201,8 +4201,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 22,
@@ -4214,8 +4214,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 2,
-        "total": 40.0
+        "cantidad": 1,
+        "total": 20.0
       },
       {
         "idProductoVendido": 22,
@@ -4247,10 +4247,10 @@
   },
   {
     "idVenta": 23,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-06-16",
     "numeroTicket": "24",
-    "total": 790.0,
-    "formaPago": "TARJETA",
+    "total": 540.0,
+    "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 3,
       "nombre": "Juan",
@@ -4381,8 +4381,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 4,
-        "total": 40.0
+        "cantidad": 1,
+        "total": 10.0
       },
       {
         "idProductoVendido": 23,
@@ -4394,8 +4394,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 2,
-        "total": 60.0
+        "cantidad": 1,
+        "total": 30.0
       },
       {
         "idProductoVendido": 23,
@@ -4407,8 +4407,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 2,
+        "total": 40.0
       },
       {
         "idProductoVendido": 23,
@@ -4420,8 +4420,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 3,
-        "total": 270.0
+        "cantidad": 4,
+        "total": 360.0
       },
       {
         "idProductoVendido": 23,
@@ -4433,17 +4433,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 4,
-        "total": 400.0
+        "cantidad": 1,
+        "total": 100.0
       }
     ]
   },
   {
     "idVenta": 24,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-02-03",
     "numeroTicket": "25",
-    "total": 850.0,
-    "formaPago": "TARJETA",
+    "total": 680.0,
+    "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
@@ -4587,8 +4587,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 1,
+        "total": 30.0
       },
       {
         "idProductoVendido": 24,
@@ -4600,8 +4600,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 3,
-        "total": 60.0
+        "cantidad": 4,
+        "total": 80.0
       },
       {
         "idProductoVendido": 24,
@@ -4626,16 +4626,16 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 3,
-        "total": 300.0
+        "cantidad": 2,
+        "total": 200.0
       }
     ]
   },
   {
     "idVenta": 25,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-06-24",
     "numeroTicket": "26",
-    "total": 510.0,
+    "total": 650.0,
     "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 2,
@@ -4780,8 +4780,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 25,
@@ -4819,17 +4819,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 2,
-        "total": 200.0
+        "cantidad": 4,
+        "total": 400.0
       }
     ]
   },
   {
     "idVenta": 26,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-06-12",
     "numeroTicket": "27",
-    "total": 790.0,
-    "formaPago": "TARJETA",
+    "total": 430.0,
+    "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 3,
       "nombre": "Juan",
@@ -4960,8 +4960,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 2,
-        "total": 20.0
+        "cantidad": 4,
+        "total": 40.0
       },
       {
         "idProductoVendido": 26,
@@ -4999,8 +4999,8 @@
           "codigoNumerico": 3108,
           "precio": 90.0
         },
-        "cantidad": 3,
-        "total": 270.0
+        "cantidad": 1,
+        "total": 90.0
       },
       {
         "idProductoVendido": 26,
@@ -5012,16 +5012,16 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 3,
-        "total": 300.0
+        "cantidad": 1,
+        "total": 100.0
       }
     ]
   },
   {
     "idVenta": 27,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-06-30",
     "numeroTicket": "28",
-    "total": 470.0,
+    "total": 590.0,
     "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 1,
@@ -5179,8 +5179,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 1,
-        "total": 20.0
+        "cantidad": 2,
+        "total": 40.0
       },
       {
         "idProductoVendido": 27,
@@ -5205,17 +5205,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 1,
-        "total": 100.0
+        "cantidad": 2,
+        "total": 200.0
       }
     ]
   },
   {
     "idVenta": 28,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-03-15",
     "numeroTicket": "29",
-    "total": 460.0,
-    "formaPago": "TARJETA",
+    "total": 580.0,
+    "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 2,
       "nombre": "Maria",
@@ -5346,8 +5346,8 @@
           "codigoNumerico": 3459,
           "precio": 10.0
         },
-        "cantidad": 1,
-        "total": 10.0
+        "cantidad": 2,
+        "total": 20.0
       },
       {
         "idProductoVendido": 28,
@@ -5359,8 +5359,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 4,
-        "total": 120.0
+        "cantidad": 3,
+        "total": 90.0
       },
       {
         "idProductoVendido": 28,
@@ -5372,8 +5372,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 2,
-        "total": 40.0
+        "cantidad": 4,
+        "total": 80.0
       },
       {
         "idProductoVendido": 28,
@@ -5398,17 +5398,17 @@
           "codigoNumerico": 4913,
           "precio": 100.0
         },
-        "cantidad": 2,
-        "total": 200.0
+        "cantidad": 3,
+        "total": 300.0
       }
     ]
   },
   {
     "idVenta": 29,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-11-04",
     "numeroTicket": "30",
-    "total": 600.0,
-    "formaPago": "TARJETA",
+    "total": 610.0,
+    "formaPago": "DEBITO",
     "cliente": {
       "idCliente": 3,
       "nombre": "Juan",
@@ -5552,8 +5552,8 @@
           "codigoNumerico": 5678,
           "precio": 30.0
         },
-        "cantidad": 3,
-        "total": 90.0
+        "cantidad": 2,
+        "total": 60.0
       },
       {
         "idProductoVendido": 29,
@@ -5565,8 +5565,8 @@
           "codigoNumerico": 4467,
           "precio": 20.0
         },
-        "cantidad": 2,
-        "total": 40.0
+        "cantidad": 4,
+        "total": 80.0
       },
       {
         "idProductoVendido": 29,
@@ -5598,10 +5598,10 @@
   },
   {
     "idVenta": 30,
-    "fecha": "2024-06-10T02:36:04.349965600",
+    "fecha": "2024-12-22",
     "numeroTicket": "31",
     "total": 650.0,
-    "formaPago": "TARJETA",
+    "formaPago": "EFECTIVO",
     "cliente": {
       "idCliente": 1,
       "nombre": "Jose",
