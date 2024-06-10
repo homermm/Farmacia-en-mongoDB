@@ -98,7 +98,7 @@ public class MongoDB {
 				
 				List<ProductoVenta> productosVendidos = new ArrayList<>();
 				for (Producto producto : productos) {
-					productosVendidos.add(new ProductoVenta(idVenta, producto, 1));
+					productosVendidos.add(new ProductoVenta(idVenta, producto, random.nextInt(4) + 1));
 				}
 				
 				String formaPago = formasDePago[random.nextInt(formasDePago.length)];
